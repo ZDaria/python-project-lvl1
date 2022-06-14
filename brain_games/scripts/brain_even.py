@@ -30,12 +30,12 @@ def main():
         if answer.strip().lower() == even_flag:
             print("Correct!")
             counter += 1
-            if counter == 3 : print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"'{even_flag}'.")
             print(f"Let's try again, {name}!")
-            counter = 3
+            return
+    print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
