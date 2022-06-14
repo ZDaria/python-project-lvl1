@@ -1,13 +1,7 @@
 #!/usr/bin/env python
+from brain_games.common import get_response, get_user_name
 import random
 import prompt
-
-
-def welcome_user():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
-    return name
 
 
 def get_even_flag(number):
@@ -19,21 +13,17 @@ def get_even_flag(number):
 
 
 def main():
-    name = welcome_user()
+    name = get_user_name()
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     counter = 0
     while counter != 3:
         number = random.randint(1, 100)
-        print(f"Question: {number}")
-        answer = input()
         even_flag = get_even_flag(number)
-        if answer.strip().lower() == even_flag:
-            print("Correct!")
+        print(f"Question: {number}")
+        user_result = prompt.string('Your answer: ')
+        if get_response(user_result, even_flag, name):
             counter += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was "
-                  f"'{even_flag}'.")
-            print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
 

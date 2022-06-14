@@ -3,3 +3,5 @@
 [![Actions Status](https://github.com/ZDaria/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ZDaria/python-project-lvl1/actions)
 ####Brain even game
 https://asciinema.org/a/aFprqDkUNYcbu4rjoURrwy89B
+####Brain calc game
+https://asciinema.org/a/6XzdSYNALxG48D7QMo2HzeJXJ
