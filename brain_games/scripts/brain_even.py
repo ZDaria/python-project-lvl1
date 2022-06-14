@@ -27,16 +27,15 @@ def main():
         print(f"Question: {number}")
         answer = input()
         even_flag = get_even_flag(number)
-        # validation part
         if answer.strip().lower() == even_flag:
             print("Correct!")
             counter += 1
+            if counter == 3 : print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"'{even_flag}'.")
             print(f"Let's try again, {name}!")
-            counter = 0
-    print(f"Congratulations, {name}!")
+            counter = 3
 
 
 if __name__ == "__main__":
