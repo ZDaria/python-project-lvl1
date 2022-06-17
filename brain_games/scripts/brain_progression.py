@@ -23,7 +23,7 @@ def get_arith_progression(progression_start, step):
 
 def main():
     name = get_user_name()
-    print("Find the greatest common divisor of given numbers.")
+    print("What number is missing in the progression?")
     counter = 0
     while counter != 3:
         progression_start = random.randint(1, 100)
