@@ -12,4 +12,4 @@ https://asciinema.org/a/6XzdSYNALxG48D7QMo2HzeJXJ
 https://asciinema.org/a/q5dBQXzvmXbDfcE4sDiQt1ASM
 
 ###Brain progression game
-progression_string
+https://asciinema.org/a/QpQPontwgxfIFNcYZnBuH8brC
