@@ -6,10 +6,9 @@ import prompt
 
 def get_even_flag(number):
     if number % 2 == 0:
-        even_flag = "yes"
+        return "yes"
     else:
-        even_flag = "no"
-    return even_flag
+        return "no"
 
 
 def main():
