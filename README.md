@@ -5,3 +5,5 @@
 https://asciinema.org/a/aFprqDkUNYcbu4rjoURrwy89B
 ####Brain calc game
 https://asciinema.org/a/6XzdSYNALxG48D7QMo2HzeJXJ
+####Brain GCD game (greatest common divisor)
+https://asciinema.org/a/q5dBQXzvmXbDfcE4sDiQt1ASM
