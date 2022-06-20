@@ -1,5 +1,4 @@
 import prompt
-from brain_games.scripts.games import calc, prime, progression, gcd, even
 
 
 def get_user_name():
