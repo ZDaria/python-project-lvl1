@@ -20,8 +20,6 @@ def get_response(user_result, expr_result, name):
 
 
 def start_game(dialog_string, game_name):
-    question = ""
-    expr_result = ""
     name = get_user_name()
     print(dialog_string)
     counter = 0
