@@ -27,16 +27,7 @@ def start_game(dialog_string, game_name):
     print(dialog_string)
     counter = 0
     while counter != 3:
-        if game_name == "calc":
-            expr_result, question = calc.get_task()
-        elif game_name == "even":
-            expr_result, question = even.get_task()
-        elif game_name == "gcd":
-            expr_result, question = gcd.get_task()
-        elif game_name == "prime":
-            expr_result, question = prime.get_task()
-        elif game_name == "progression":
-            expr_result, question = progression.get_task()
+        expr_result, question = game_name.get_task()
         print(f"Question: {question}")
         user_result = prompt.string('Your answer: ')
         if get_response(user_result, expr_result, name):

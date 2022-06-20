@@ -7,15 +7,13 @@ def get_task():
     progression_length = random.randint(5, 11)
     hidden_num_position = random.randint(2, progression_length)
     hidden_num = 0
-    position_counter = 0
-    progression_string = ""
-    for x in range(progression_start, progression_start +
-                   step * progression_length, step):
-        if hidden_num_position == position_counter:
+    progression_string = str(progression_start)
+    while progression_length - 1 != 0:
+        progression_start += step
+        if progression_length == hidden_num_position:
             progression_string += " .."
-            hidden_num = x
+            hidden_num = progression_start
         else:
-            progression_string += f" {x}"
-        position_counter += 1
-
+            progression_string += f" {progression_start}"
+        progression_length -= 1
     return hidden_num, progression_string
