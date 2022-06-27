@@ -1,4 +1,4 @@
 /dist/
 .venv
 .github
-pycache
+pycache/
