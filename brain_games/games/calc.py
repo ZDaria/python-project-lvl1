@@ -2,6 +2,13 @@ import random
 
 
 def get_task():
-    operation = random.choices(["+", "*", "-"], k=1)[0]
-    expr = f"{random.randint(1, 100)} {operation} {random.randint(1, 100)}"
-    return eval(expr), expr
+    operation = random.choice(["+", "*", "-"])
+    number_1 = random.randint(1, 100)
+    number_2 = random.randint(1, 100)
+    if operation == "+":
+        res = number_1 + number_2
+    elif operation == "*":
+        res = number_1 * number_2
+    else:
+        res = number_1 - number_2
+    return res, f"{number_1} {operation} {number_2}"
