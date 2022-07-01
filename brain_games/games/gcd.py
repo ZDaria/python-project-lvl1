@@ -1,6 +1,8 @@
 import random
 import math
 
+TASK_STRING = "Find the greatest common divisor of given numbers."
+
 
 def get_task():
     number1 = random.randint(1, 100)

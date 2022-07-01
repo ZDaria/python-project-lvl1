@@ -1,5 +1,7 @@
 import random
 
+TASK_STRING = "What number is missing in the progression?"
+
 
 def get_task():
     progression_start = random.randint(1, 100)

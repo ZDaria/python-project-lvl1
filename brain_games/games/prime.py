@@ -1,5 +1,8 @@
 import random
 
+TASK_STRING = "Answer \"yes\" if given number is prime. " \
+              "Otherwise answer \"no\"."
+
 
 def get_task():
     number = random.randint(1, 100)
