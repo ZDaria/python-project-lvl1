@@ -1,5 +1,7 @@
 import random
 
+TASK_STRING = "What is the result of the expression?"
+
 
 def get_task():
     operation = random.choice(["+", "*", "-"])
