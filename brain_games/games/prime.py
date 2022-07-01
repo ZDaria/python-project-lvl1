@@ -1,11 +1,16 @@
-import random
+from brain_games.games.common import get_number
 
 TASK_STRING = "Answer \"yes\" if given number is prime. " \
               "Otherwise answer \"no\"."
 
 
 def get_task():
-    number = random.randint(1, 100)
+    """This is prime game.
+    This function provides number and flag for it.
+    YES - if this number is prime and
+    NO - if it is not so."""
+
+    number = get_number()
     delim = 2
     while delim < number:
         if number % delim == 0:
