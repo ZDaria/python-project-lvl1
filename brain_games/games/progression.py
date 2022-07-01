@@ -1,10 +1,16 @@
 import random
+from brain_games.games.common import get_number
 
 TASK_STRING = "What number is missing in the progression?"
 
 
 def get_task():
-    progression_start = random.randint(1, 100)
+    """This function creates progression game.
+    As a result it provides progression string with one missed number
+    (replaced with ..) and a solution for this game - the number which were
+    hidden."""
+
+    progression_start = get_number()
     step = random.randint(2, 10)
     progression_length = random.randint(5, 11)
     hidden_num_position = random.randint(0, progression_length)
