@@ -1,5 +1,7 @@
 import prompt
 
+NUMBER_OF_WINS = 3
+
 
 def get_response(user_result, expr_result, name):
     if user_result == str(expr_result):
@@ -18,7 +20,7 @@ def start_game(game_name):
     print(f"Hello, {name}!")
     print(game_name.TASK_STRING)
     counter = 0
-    while counter != 3:
+    while counter != NUMBER_OF_WINS:
         expr_result, question = game_name.get_task()
         print(f"Question: {question}")
         user_result = prompt.string('Your answer: ')
