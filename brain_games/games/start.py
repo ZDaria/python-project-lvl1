@@ -1,24 +1,24 @@
 import prompt
 
-NUMBER_OF_WINS = 3
+WINS_COUNT = 3
 
 
 def start_game(game_name):
-    print("Welcome to the Brain Games!")
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
+    print(f'Hello, {name}!')
     print(game_name.TASK_STRING)
     counter = 0
-    while counter != NUMBER_OF_WINS:
+    while counter != WINS_COUNT:
         expr_result, question = game_name.get_task()
-        print(f"Question: {question}")
+        print(f'Question: {question}')
         user_result = prompt.string('Your answer: ')
-        if user_result == str(expr_result):
-            print("Correct!")
+        if user_result == expr_result:
+            print('Correct!')
             counter += 1
         else:
-            print(f"{user_result} is wrong answer;(. "
-                  f"Correct answer was {expr_result}.")
-            print(f"Let's try again, {name}!")
+            print(f'{user_result} is wrong answer;(. '
+                  f'Correct answer was {expr_result}.')
+            print(f'Let\'s try again, {name}!')
             return
-    print(f"Congratulations, {name}!")
+    print(f'Congratulations, {name}!')
