@@ -1,7 +1,7 @@
 import math
 from brain_games.games.common import get_number
 
-TASK_STRING = "Find the greatest common divisor of given numbers."
+TASK_STRING = 'Find the greatest common divisor of given numbers.'
 
 
 def get_task():
@@ -10,4 +10,4 @@ def get_task():
 
     number1 = get_number()
     number2 = get_number()
-    return math.gcd(number1, number2), f"{number1} {number2}"
+    return str(math.gcd(number1, number2)), f'{number1} {number2}'

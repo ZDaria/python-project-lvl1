@@ -20,13 +20,13 @@ def get_task():
                                         PROGRESSION_LENGTH_UPPER_LIMIT)
     hidden_num_position = random.randint(0, progression_length)
     hidden_num = 0
-    progression_string = ""
+    progression_string = ''
     while progression_length >= 0:
         progression_start += step
         if progression_length == hidden_num_position:
-            progression_string += " .."
+            progression_string += ' ..'
             hidden_num = progression_start
         else:
-            progression_string += f" {progression_start}"
+            progression_string += f' {progression_start}'
         progression_length -= 1
-    return hidden_num, progression_string.strip()
+    return str(hidden_num), progression_string.strip()

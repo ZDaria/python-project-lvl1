@@ -8,4 +8,4 @@ def get_task():
     Returns: flag does int value even or not and question - this int number."""
 
     question = get_number()
-    return ("yes" if question % 2 == 0 else "no"), question
+    return ('yes' if question % 2 == 0 else 'no'), question
