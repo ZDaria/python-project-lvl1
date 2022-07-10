@@ -1,11 +1,12 @@
 import random
-from brain_games.games.common import get_number
 
-TASK_STRING = "What number is missing in the progression?"
+TASK_STRING = 'What number is missing in the progression?'
 STEP_LOWER_LIMIT = 2
 STEP_UPPER_LIMIT = 10
 PROGRESSION_LENGTH_LOWER_LIMIT = 5
 PROGRESSION_LENGTH_UPPER_LIMIT = 10
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
 def get_task():
@@ -14,7 +15,7 @@ def get_task():
     (replaced with ..) and a solution for this game - the number which were
     hidden."""
 
-    progression_start = get_number()
+    progression_start = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     step = random.randint(STEP_LOWER_LIMIT, STEP_UPPER_LIMIT)
     progression_length = random.randint(PROGRESSION_LENGTH_LOWER_LIMIT,
                                         PROGRESSION_LENGTH_UPPER_LIMIT)

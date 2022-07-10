@@ -1,7 +1,9 @@
-from brain_games.games.common import get_number
+import random
 
-TASK_STRING = 'Answer \"yes\" if given number is prime. " \
-              "Otherwise answer \"no\".'
+TASK_STRING = 'Answer \"yes\" if given number is prime. ' \
+              'Otherwise answer \"no\".'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
 def get_task():
@@ -10,7 +12,7 @@ def get_task():
     YES - if this number is prime and
     NO - if it is not so."""
 
-    number = get_number()
+    number = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     delim = 2
     if number == 0 or number == 1:
         return 'no'
