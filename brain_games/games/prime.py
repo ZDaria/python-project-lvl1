@@ -14,6 +14,8 @@ def get_task():
 
     number = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     delim = 2
+    if number in [0, 1]:
+        return 'no', number
     while delim < number:
         if number % delim == 0:
             return 'no', number
