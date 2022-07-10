@@ -2,7 +2,7 @@ import random
 
 TASK_STRING = 'Answer \"yes\" if given number is prime. ' \
               'Otherwise answer \"no\".'
-LOWER_LIMIT = 1
+LOWER_LIMIT = 2
 UPPER_LIMIT = 100
 
 
@@ -14,8 +14,6 @@ def get_task():
 
     number = random.randint(LOWER_LIMIT, UPPER_LIMIT)
     delim = 2
-    if number == 0 or number == 1:
-        return 'no'
     while delim < number:
         if number % delim == 0:
             return 'no', number
