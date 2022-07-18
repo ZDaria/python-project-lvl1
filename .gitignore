@@ -2,3 +2,4 @@
 .venv
 .github
 pycache/
+__pycache__
