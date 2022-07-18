@@ -1,6 +1,6 @@
 import random
 
-TASK_STRING = 'What number is missing in the progression?'
+TASK_DESCRIPTION = 'What number is missing in the progression?'
 STEP_LOWER_LIMIT = 2
 STEP_UPPER_LIMIT = 10
 PROGRESSION_LENGTH_LOWER_LIMIT = 5

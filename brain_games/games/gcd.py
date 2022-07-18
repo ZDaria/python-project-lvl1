@@ -1,7 +1,7 @@
 import math
 import random
 
-TASK_STRING = 'Find the greatest common divisor of given numbers.'
+TASK_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 

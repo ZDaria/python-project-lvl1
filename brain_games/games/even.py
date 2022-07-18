@@ -1,6 +1,7 @@
 import random
 
-TASK_STRING = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
+TASK_DESCRIPTION = 'Answer \"yes\" if the number is even, otherwise ' \
+                   'answer \"no\".'
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 

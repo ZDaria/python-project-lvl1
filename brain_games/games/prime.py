@@ -1,7 +1,7 @@
 import random
 
-TASK_STRING = 'Answer \"yes\" if given number is prime. ' \
-              'Otherwise answer \"no\".'
+TASK_DESCRIPTION = 'Answer \"yes\" if given number is prime. ' \
+                   'Otherwise answer \"no\".'
 LOWER_LIMIT = 2
 UPPER_LIMIT = 100
 

@@ -1,6 +1,6 @@
 import random
 
-TASK_STRING = 'What is the result of the expression?'
+TASK_DESCRIPTION = 'What is the result of the expression?'
 LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
@@ -8,7 +8,7 @@ UPPER_LIMIT = 100
 def get_operator():
     """ This function returns one of mathematics operators."""
 
-    operators_for_expression = ["+", "*", "-"]
+    operators_for_expression = ['+', '*', '-']
     return random.choice(operators_for_expression)
 
 
@@ -19,7 +19,7 @@ def get_expected_result(num1, num2, operation):
         res = num1 + num2
     elif operation == '*':
         res = num1 * num2
-    else:
+    elif operation == '-':
         res = num1 - num2
     return res
 
